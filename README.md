@@ -6,9 +6,9 @@ used for prediction. The training dataset is there in Hadoop filesystem and then
 model is trained using spark.
 
 
-Follow these steps before running the application:
+Here are the steps before running the application:
 
-+ run the shell script setup.sh. This will install all the required library dependencies.
++ I ran the shell script setup.sh. This installed all the required library dependencies.
 
 + Get fs.defaultFS property from /etc/hadoop/conf/core-site.xml.
 
@@ -18,11 +18,11 @@ Follow these steps before running the application:
 
 + Put the boston.csv file inside "Dataset" folder in Source code to HDFS /dataset directory.
 
-+ Download the latest binary Kafka release from https://kafka.apache.org/downloads to your local machine and SCP to aws emr master node /home/hadoop
++ Downloaded the latest binary Kafka release from https://kafka.apache.org/downloads to my local machine and SCP to aws emr master node /home/hadoop
 
 + Unzip the kafka package using "tar -xzf kafka_2.13-3.3.1.tgz"
 
-+ Now enter the following commands into the terminal:
++ Ran the following commands in the terminal:
 ```console
 cd kafka_2.13-3.3.1
 bin/zookeeper-server-start.sh config/zookeeper.properties &
